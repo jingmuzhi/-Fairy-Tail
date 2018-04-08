@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>tab</title>
+    <style>
+        .content{
+            width:400px;
+            height:300px;
+            border:1px solid #888;
+            position:absolute;
+            top:80px;
+            left:10px;
+            display:none;
+        }
+        a{
+            text-decoration:none;
+            width:94px;
+            height:66px;
+            background:#242424;
+            text-align: center;
+            line-height:66px;
+            float:left;
+            color:#b7b7b7;
+            padding:0 5px;
+        }
+        .content:target{
+            display:block;
+        }
+        .content:target+a{
+            background:#000000;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="content" id="div1">发现音乐的内容</div>
+        <a href="#div1">发现音乐</a>
+        <div class="content" id="div2">我的音乐的内容</div>
+        <a href="#div2">我的音乐</a>
+        <div class="content" id="div3">朋友的内容</div>
+        <a href="#div3">朋友</a>
+        <div class="content" id="div4">商城的内容</div>
+        <a href="#div4">商城</a>
+        <div class="content" id="div5">音乐人的内容</div>
+        <a href="#div5">音乐人</a>
+        <div class="content" id="div6">下载客户端的内容</div>
+        <a href="#div6">下载客户端</a>
+    </div>
+</body>
+</html>
